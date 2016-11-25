@@ -22,7 +22,14 @@ def merge(line):
     Helper function that merges a single row or column in 2048
     """
     # replace with your code from the previous mini-project
-    return []
+    l = len(line)
+    s1 = [0]*l
+    j = 0
+    for i in range(l):
+        if line[i] != 0:
+            s1[j] = line[i]
+            j += 1
+    return s1
 
 class TwentyFortyEight:
     """
