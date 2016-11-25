@@ -10,11 +10,11 @@ def merge(line):
     s1 = [0]*l
     j = 0
     for i in range(l):
-    	if l[i] != 0:
-    		s1[j] = l[i]
-
-    return []
+        if line[i] != 0:
+            s1[j] = line[i]
+            j += 1
+    return s1
 
 a = [2,0,2,4]
 
-print merge(a)
+print (merge(a))
