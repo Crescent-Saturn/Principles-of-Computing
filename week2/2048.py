@@ -29,6 +29,13 @@ def merge(line):
         if line[i] != 0:
             s1[j] = line[i]
             j += 1
+
+    for k in range(l-1):
+        if s1[k] == s1[k+1]:
+            s1[k] *=2
+            s1.pop(k+1)
+            s1.append(0)
+
     return s1
 
 class TwentyFortyEight:
