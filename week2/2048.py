@@ -57,7 +57,7 @@ class TwentyFortyEight:
         initial tiles.
         """
         # replace with your code
-        self.grid = [[row + col for col in range(self.gh)]
+        self.grid = [[0 for col in range(self.gh)]
                                 for row in range(self.gw)]
         self.new_tile()
 
