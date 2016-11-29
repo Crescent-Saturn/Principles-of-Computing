@@ -3,6 +3,7 @@ Clone of 2048 game.
 """
 
 import poc_2048_gui
+import random
 
 # Directions, DO NOT MODIFY
 UP = 1
@@ -45,7 +46,10 @@ class TwentyFortyEight:
 
     def __init__(self, grid_height, grid_width):
         # replace with your code
-        pass
+        self.gh = grid_height
+        self.gw = grid_width
+
+        self.reset()
 
     def reset(self):
         """
@@ -53,7 +57,9 @@ class TwentyFortyEight:
         initial tiles.
         """
         # replace with your code
-        pass
+        self.grid = [[row + col for col in range(self.gh)]
+                                for row in range(self.gw)]
+        self.new_tile()
 
     def __str__(self):
         """
@@ -91,7 +97,7 @@ class TwentyFortyEight:
         4 10% of the time.
         """
         # replace with your code
-        pass
+        
 
     def set_tile(self, row, col, value):
         """
