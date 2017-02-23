@@ -7,3 +7,16 @@ The main focus of the class will be programming weekly mini-projects in Python t
 In part 1 of this course, the programming aspect of the class will focus on coding standards and testing. The mathematical portion of the class will focus on probability, combinatorics, and counting with an eye towards practical applications of these concepts in Computer Science.  
 
 > Recommended Background - Students should be comfortable writing small (100+ line) programs in Python using constructs such as lists, dictionaries and classes and also have a high-school math background that includes algebra and pre-calculus.
+
+
+
+### Sublime Text3 设置Python3为默认编译系统
+`Tools -> Build System -> New Build System`
+
+    {
+     "cmd": ["usr/bin/python3", "$file"], 
+     "selector": "source.python", 
+      "file_regex": "file \"(...*?)\", line ([0-9]+)"
+    }
+    
+Saved As Python3.sublime-build.
